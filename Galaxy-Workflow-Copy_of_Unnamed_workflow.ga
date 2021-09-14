@@ -1,0 +1,300 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "Copy of Unnamed workflow",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "structure"
+                }
+            ],
+            "label": "structure",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 212.98612594604492,
+                "height": 60.94907760620117,
+                "left": 396.8287353515625,
+                "right": 596.8171691894531,
+                "top": 152.03704833984375,
+                "width": 199.98843383789062,
+                "x": 396.8287353515625,
+                "y": 152.03704833984375
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "2b7ab6cf-5c08-4c69-a1aa-3709b91ef272",
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "params"
+                }
+            ],
+            "label": "params",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 288.9236259460449,
+                "height": 60.94907760620117,
+                "left": 395.8680725097656,
+                "right": 595.8565063476562,
+                "top": 227.97454833984375,
+                "width": 199.98843383789062,
+                "x": 395.8680725097656,
+                "y": 227.97454833984375
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "55b7442f-b47a-4e61-99dc-27d52d9460db",
+            "workflow_outputs": []
+        },
+        "2": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
+            "input_connections": {},
+            "inputs": [],
+            "label": null,
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "bottom": 441.5162162780762,
+                "height": 60.94907760620117,
+                "left": 385.82177734375,
+                "right": 585.8102111816406,
+                "top": 380.567138671875,
+                "width": 199.98843383789062,
+                "x": 385.82177734375,
+                "y": 380.567138671875
+            },
+            "tool_id": null,
+            "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "7be86c5b-1113-4211-9694-b0e0d9ae4ac1",
+            "workflow_outputs": []
+        },
+        "3": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 3,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "fmt"
+                }
+            ],
+            "label": "fmt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 467.9629936218262,
+                "height": 60.94907760620117,
+                "left": 664.7916870117188,
+                "right": 864.7801208496094,
+                "top": 407.013916015625,
+                "width": 199.98843383789062,
+                "x": 664.7916870117188,
+                "y": 407.013916015625
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "8dfbbfdf-6ead-4729-84f9-8ad47b736b68",
+            "workflow_outputs": []
+        },
+        "4": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "castep file"
+                }
+            ],
+            "label": "castep file",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 551.481517791748,
+                "height": 60.94907760620117,
+                "left": 656.8287353515625,
+                "right": 856.8171691894531,
+                "top": 490.5324401855469,
+                "width": 199.98843383789062,
+                "x": 656.8287353515625,
+                "y": 490.5324401855469
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "10f987bb-b855-4a74-90c2-04671f7d286f",
+            "workflow_outputs": []
+        },
+        "5": {
+            "annotation": "",
+            "content_id": "pm_muairss_write",
+            "errors": null,
+            "id": 5,
+            "input_connections": {
+                "out_folder": {
+                    "id": 2,
+                    "output_name": "output"
+                },
+                "params": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "structure": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Generate muon structures (pm-muairss)",
+            "outputs": [
+                {
+                    "name": "out_zip",
+                    "type": "zip"
+                },
+                {
+                    "name": "file_tree",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 375.85650634765625,
+                "height": 241.85186767578125,
+                "left": 676.8056030273438,
+                "right": 876.7940368652344,
+                "top": 134.004638671875,
+                "width": 199.98843383789062,
+                "x": 676.8056030273438,
+                "y": 134.004638671875
+            },
+            "post_job_actions": {},
+            "tool_id": "pm_muairss_write",
+            "tool_state": "{\"out_folder\": {\"__class__\": \"ConnectedValue\"}, \"params\": {\"__class__\": \"ConnectedValue\"}, \"structure\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.0",
+            "type": "tool",
+            "uuid": "3c7651ee-4662-48ea-9d1d-06e47338de3f",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_zip",
+                    "uuid": "cd3aa7d1-5793-48a9-8db3-8c3bf6c9887a"
+                },
+                {
+                    "label": "file tree for testing",
+                    "output_name": "file_tree",
+                    "uuid": "457f31c8-4933-4266-b216-223d23058f5b"
+                }
+            ]
+        },
+        "6": {
+            "annotation": "",
+            "content_id": "pm_uep_opt_write",
+            "errors": null,
+            "id": 6,
+            "input_connections": {
+                "castep": {
+                    "id": 4,
+                    "output_name": "output"
+                },
+                "fmt": {
+                    "id": 3,
+                    "output_name": "output"
+                },
+                "folder": {
+                    "id": 5,
+                    "output_name": "out_zip"
+                },
+                "out_folder": {
+                    "id": 2,
+                    "output_name": "output"
+                },
+                "param": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "structure": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Generate uep outputs (pm-uep-opt)",
+            "outputs": [
+                {
+                    "name": "out_zip",
+                    "type": "zip"
+                },
+                {
+                    "name": "file_tree",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 509.7569580078125,
+                "height": 331.78240966796875,
+                "left": 970.0000610351562,
+                "right": 1169.9884948730469,
+                "top": 177.97454833984375,
+                "width": 199.98843383789062,
+                "x": 970.0000610351562,
+                "y": 177.97454833984375
+            },
+            "post_job_actions": {},
+            "tool_id": "pm_uep_opt_write",
+            "tool_state": "{\"castep\": {\"__class__\": \"ConnectedValue\"}, \"fmt\": {\"__class__\": \"ConnectedValue\"}, \"folder\": {\"__class__\": \"ConnectedValue\"}, \"out_folder\": {\"__class__\": \"ConnectedValue\"}, \"param\": {\"__class__\": \"ConnectedValue\"}, \"structure\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.0",
+            "type": "tool",
+            "uuid": "0ec2c783-1c3f-47c3-b8fe-d574ecca78c2",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_zip",
+                    "uuid": "dba272b8-8f30-4507-aa2f-9f2cbfb216f1"
+                },
+                {
+                    "label": null,
+                    "output_name": "file_tree",
+                    "uuid": "2b2cdcc7-7088-4812-a9b0-ec5382865950"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "451ca030-0ab1-48bd-b4e9-af9eca405f7a",
+    "version": 4
+}
