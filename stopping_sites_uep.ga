@@ -1,174 +1,163 @@
 {
     "a_galaxy_workflow": "true",
-    "annotation": "",
+    "annotation": "Finding muon stopping site in a crystalline periodic host material  using the Unperturbed Electrostatic Potential method. ",
+    "creator": [
+        {
+            "class": "Person",
+            "familyName": "Liborio",
+            "givenName": "Leandro",
+            "identifier": "https://orcid.org/0000-0003-2777-5167"
+        },
+        {
+            "class": "Person",
+            "familyName": "Chadwick",
+            "givenName": "Eli",
+            "identifier": "https://orcid.org/0000-0002-0035-6475",
+            "url": "https://github.com/elichad"
+        },
+        {
+            "class": "Organization",
+            "name": "The Muon Spectroscopy Computational Project",
+            "url": "https://muon-spectroscopy-computational-project.github.io"
+        }
+    ],
     "format-version": "0.1",
-    "name": "Copy of Unnamed workflow",
+    "name": "Workflow to estimate muon stopping site using UEP",
     "steps": {
         "0": {
-            "annotation": "",
+            "annotation": "Structural file of the crystalline host material. ",
             "content_id": null,
             "errors": null,
             "id": 0,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "structure"
+                    "description": "Structural file of the crystalline host material. ",
+                    "name": "CASTEP structure file (*.cell)"
                 }
             ],
-            "label": "structure",
+            "label": "CASTEP structure file (*.cell)",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "bottom": 212.98612594604492,
-                "height": 60.94907760620117,
-                "left": 396.8287353515625,
-                "right": 596.8171691894531,
-                "top": 152.03704833984375,
-                "width": 199.98843383789062,
-                "x": 396.8287353515625,
-                "y": 152.03704833984375
+                "bottom": 316.56250762939453,
+                "height": 82.20000457763672,
+                "left": 194.1875,
+                "right": 394.1875,
+                "top": 234.3625030517578,
+                "width": 200,
+                "x": 194.1875,
+                "y": 234.3625030517578
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false}",
+            "tool_state": "{\"optional\": false, \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "2b7ab6cf-5c08-4c69-a1aa-3709b91ef272",
+            "uuid": "c08a09e8-3bee-4592-ac56-30e36d9646aa",
             "workflow_outputs": []
         },
         "1": {
-            "annotation": "",
+            "annotation": "Pymuon-suite file with parameters for creating, relaxing and clustering the muonated structures that will be created with pm-muairss write, pm-uep-opt  and pm-muairss read",
             "content_id": null,
             "errors": null,
             "id": 1,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "params"
+                    "description": "Pymuon-suite file with parameters for creating, relaxing and clustering the muonated structures that will be created with pm-muairss write, pm-uep-opt  and pm-muairss read",
+                    "name": "pymuon-suite parameters file (*.yaml)"
                 }
             ],
-            "label": "params",
+            "label": "pymuon-suite parameters file (*.yaml)",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "bottom": 288.9236259460449,
-                "height": 60.94907760620117,
-                "left": 395.8680725097656,
-                "right": 595.8565063476562,
-                "top": 227.97454833984375,
-                "width": 199.98843383789062,
-                "x": 395.8680725097656,
-                "y": 227.97454833984375
+                "bottom": 438.5625228881836,
+                "height": 82.20000457763672,
+                "left": 192.1875,
+                "right": 392.1875,
+                "top": 356.3625183105469,
+                "width": 200,
+                "x": 192.1875,
+                "y": 356.3625183105469
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false}",
+            "tool_state": "{\"optional\": false, \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "55b7442f-b47a-4e61-99dc-27d52d9460db",
+            "uuid": "0ac8f207-480d-4a85-be36-02fd9eabba28",
             "workflow_outputs": []
         },
         "2": {
-            "annotation": "",
+            "annotation": "CASTEP file with the formatted electronic density at the crystalline unit cell of the host material. (*.den_fmt)",
             "content_id": null,
             "errors": null,
             "id": 2,
             "input_connections": {},
-            "inputs": [],
-            "label": null,
-            "name": "Input parameter",
+            "inputs": [
+                {
+                    "description": "CASTEP file with the formatted electronic density at the crystalline unit cell of the host material. (*.den_fmt)",
+                    "name": "CASTEP formatted electronic density "
+                }
+            ],
+            "label": "CASTEP formatted electronic density ",
+            "name": "Input dataset",
             "outputs": [],
             "position": {
-                "bottom": 441.5162162780762,
-                "height": 60.94907760620117,
-                "left": 385.82177734375,
-                "right": 585.8102111816406,
-                "top": 380.567138671875,
-                "width": 199.98843383789062,
-                "x": 385.82177734375,
-                "y": 380.567138671875
+                "bottom": 560.5625228881836,
+                "height": 82.20000457763672,
+                "left": 193.1875,
+                "right": 393.1875,
+                "top": 478.3625183105469,
+                "width": 200,
+                "x": 193.1875,
+                "y": 478.3625183105469
             },
             "tool_id": null,
-            "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
+            "tool_state": "{\"optional\": false, \"tag\": \"\"}",
             "tool_version": null,
-            "type": "parameter_input",
-            "uuid": "7be86c5b-1113-4211-9694-b0e0d9ae4ac1",
+            "type": "data_input",
+            "uuid": "038c9742-4c28-4c63-bc7e-19911714db86",
             "workflow_outputs": []
         },
         "3": {
-            "annotation": "",
+            "annotation": "CASTEP output file that results from the relaxation of the host material. ",
             "content_id": null,
             "errors": null,
             "id": 3,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "fmt"
+                    "description": "CASTEP output file that results from the relaxation of the host material. ",
+                    "name": "CASTEP output file "
                 }
             ],
-            "label": "fmt",
+            "label": "CASTEP output file ",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "bottom": 467.9629936218262,
-                "height": 60.94907760620117,
-                "left": 664.7916870117188,
-                "right": 864.7801208496094,
-                "top": 407.013916015625,
-                "width": 199.98843383789062,
-                "x": 664.7916870117188,
-                "y": 407.013916015625
+                "bottom": 667.5624923706055,
+                "height": 82.20000457763672,
+                "left": 196.1875,
+                "right": 396.1875,
+                "top": 585.3624877929688,
+                "width": 200,
+                "x": 196.1875,
+                "y": 585.3624877929688
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false}",
+            "tool_state": "{\"optional\": false, \"tag\": \"\"}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "8dfbbfdf-6ead-4729-84f9-8ad47b736b68",
+            "uuid": "cb6c9303-9fb8-437f-8aa6-4a48f1ce691b",
             "workflow_outputs": []
         },
         "4": {
-            "annotation": "",
-            "content_id": null,
-            "errors": null,
-            "id": 4,
-            "input_connections": {},
-            "inputs": [
-                {
-                    "description": "",
-                    "name": "castep file"
-                }
-            ],
-            "label": "castep file",
-            "name": "Input dataset",
-            "outputs": [],
-            "position": {
-                "bottom": 551.481517791748,
-                "height": 60.94907760620117,
-                "left": 656.8287353515625,
-                "right": 856.8171691894531,
-                "top": 490.5324401855469,
-                "width": 199.98843383789062,
-                "x": 656.8287353515625,
-                "y": 490.5324401855469
-            },
-            "tool_id": null,
-            "tool_state": "{\"optional\": false}",
-            "tool_version": null,
-            "type": "data_input",
-            "uuid": "10f987bb-b855-4a74-90c2-04671f7d286f",
-            "workflow_outputs": []
-        },
-        "5": {
-            "annotation": "",
+            "annotation": "Use pm-muairss in the 'write' mode to generate a set of crystalline host material's unit cells with muons distributed in random positions. ",
             "content_id": "pm_muairss_write",
             "errors": null,
-            "id": 5,
+            "id": 4,
             "input_connections": {
-                "out_folder": {
-                    "id": 2,
-                    "output_name": "output"
-                },
                 "params": {
                     "id": 1,
                     "output_name": "output"
@@ -179,122 +168,147 @@
                 }
             },
             "inputs": [],
-            "label": null,
-            "name": "Generate muon structures (pm-muairss)",
+            "label": "Generate muonated random structures",
+            "name": "PyMuonSuite AIRSS Generate",
             "outputs": [
                 {
-                    "name": "out_zip",
+                    "name": "muonated_structures",
                     "type": "zip"
-                },
-                {
-                    "name": "file_tree",
-                    "type": "txt"
                 }
             ],
             "position": {
-                "bottom": 375.85650634765625,
-                "height": 241.85186767578125,
-                "left": 676.8056030273438,
-                "right": 876.7940368652344,
-                "top": 134.004638671875,
-                "width": 199.98843383789062,
-                "x": 676.8056030273438,
-                "y": 134.004638671875
+                "bottom": 243.3499984741211,
+                "height": 144,
+                "left": 488.2375183105469,
+                "right": 688.2375183105469,
+                "top": 99.3499984741211,
+                "width": 200,
+                "x": 488.2375183105469,
+                "y": 99.3499984741211
             },
             "post_job_actions": {},
             "tool_id": "pm_muairss_write",
-            "tool_state": "{\"out_folder\": {\"__class__\": \"ConnectedValue\"}, \"params\": {\"__class__\": \"ConnectedValue\"}, \"structure\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.1.0",
+            "tool_state": "{\"iscastep\": {\"iscastep_sel\": \"false\", \"__current_case__\": 1}, \"params\": {\"__class__\": \"ConnectedValue\"}, \"structure\": {\"__class__\": \"ConnectedValue\"}, \"testing\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.2.1+galaxy1",
             "type": "tool",
-            "uuid": "3c7651ee-4662-48ea-9d1d-06e47338de3f",
+            "uuid": "766d9f24-0a04-4fcb-949b-dd54927d8270",
             "workflow_outputs": [
                 {
-                    "label": null,
-                    "output_name": "out_zip",
-                    "uuid": "cd3aa7d1-5793-48a9-8db3-8c3bf6c9887a"
+                    "label": "Muonated structures",
+                    "output_name": "muonated_structures",
+                    "uuid": "e801bd40-6d03-42bf-a5e7-a36d1d1a5ec4"
+                }
+            ]
+        },
+        "5": {
+            "annotation": "Uses pm-uep-opt to relax the electrostatic forces on the muons in each of the muonated structures.",
+            "content_id": "pm_uep_opt",
+            "errors": null,
+            "id": 5,
+            "input_connections": {
+                "castep_log": {
+                    "id": 3,
+                    "output_name": "output"
                 },
+                "charge_density": {
+                    "id": 2,
+                    "output_name": "output"
+                },
+                "muonated_structures": {
+                    "id": 4,
+                    "output_name": "muonated_structures"
+                }
+            },
+            "inputs": [],
+            "label": "Generate relaxed muonated structures with UEP",
+            "name": "PyMuonSuite AIRSS UEP Optimise",
+            "outputs": [
                 {
-                    "label": "file tree for testing",
-                    "output_name": "file_tree",
-                    "uuid": "457f31c8-4933-4266-b216-223d23058f5b"
+                    "name": "uep_results",
+                    "type": "zip"
+                }
+            ],
+            "position": {
+                "bottom": 429.1625061035156,
+                "height": 194.8000030517578,
+                "left": 728.2250366210938,
+                "right": 928.2250366210938,
+                "top": 234.3625030517578,
+                "width": 200,
+                "x": 728.2250366210938,
+                "y": 234.3625030517578
+            },
+            "post_job_actions": {},
+            "tool_id": "pm_uep_opt",
+            "tool_state": "{\"castep_log\": {\"__class__\": \"ConnectedValue\"}, \"charge_density\": {\"__class__\": \"ConnectedValue\"}, \"muonated_structures\": {\"__class__\": \"ConnectedValue\"}, \"testing\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.2.1+galaxy1",
+            "type": "tool",
+            "uuid": "64499e49-3715-47f2-a7b6-3ef621aebb88",
+            "workflow_outputs": [
+                {
+                    "label": "UEP results",
+                    "output_name": "uep_results",
+                    "uuid": "e80eba22-6aca-4c92-9ec2-ddded0ad412f"
                 }
             ]
         },
         "6": {
-            "annotation": "",
-            "content_id": "pm_uep_opt_write",
+            "annotation": "Search for clusters of muons using the hierarchical method. Clusters are related to muon stopping sites.",
+            "content_id": "pm_muairss_read",
             "errors": null,
             "id": 6,
             "input_connections": {
-                "castep": {
-                    "id": 4,
-                    "output_name": "output"
-                },
-                "fmt": {
-                    "id": 3,
-                    "output_name": "output"
-                },
-                "folder": {
+                "optimisation_results": {
                     "id": 5,
-                    "output_name": "out_zip"
-                },
-                "out_folder": {
-                    "id": 2,
-                    "output_name": "output"
-                },
-                "param": {
-                    "id": 1,
-                    "output_name": "output"
-                },
-                "structure": {
-                    "id": 0,
-                    "output_name": "output"
+                    "output_name": "uep_results"
                 }
             },
             "inputs": [],
-            "label": null,
-            "name": "Generate uep outputs (pm-uep-opt)",
+            "label": "Cluster relaxed muonated structures",
+            "name": "PyMuonSuite AIRSS Cluster",
             "outputs": [
                 {
-                    "name": "out_zip",
-                    "type": "zip"
+                    "name": "cluster_report",
+                    "type": "txt"
                 },
                 {
-                    "name": "file_tree",
+                    "name": "cluster_data",
                     "type": "txt"
                 }
             ],
             "position": {
-                "bottom": 509.7569580078125,
-                "height": 331.78240966796875,
-                "left": 970.0000610351562,
-                "right": 1169.9884948730469,
-                "top": 177.97454833984375,
-                "width": 199.98843383789062,
-                "x": 970.0000610351562,
-                "y": 177.97454833984375
+                "bottom": 443.7625274658203,
+                "height": 164.40000915527344,
+                "left": 995.2374877929688,
+                "right": 1195.2374877929688,
+                "top": 279.3625183105469,
+                "width": 200,
+                "x": 995.2374877929688,
+                "y": 279.3625183105469
             },
             "post_job_actions": {},
-            "tool_id": "pm_uep_opt_write",
-            "tool_state": "{\"castep\": {\"__class__\": \"ConnectedValue\"}, \"fmt\": {\"__class__\": \"ConnectedValue\"}, \"folder\": {\"__class__\": \"ConnectedValue\"}, \"out_folder\": {\"__class__\": \"ConnectedValue\"}, \"param\": {\"__class__\": \"ConnectedValue\"}, \"structure\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "0.1.0",
+            "tool_id": "pm_muairss_read",
+            "tool_state": "{\"optimisation_results\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.2.1+galaxy1",
             "type": "tool",
-            "uuid": "0ec2c783-1c3f-47c3-b8fe-d574ecca78c2",
+            "uuid": "e5d67681-74e8-4a87-a698-d197430498c9",
             "workflow_outputs": [
                 {
-                    "label": null,
-                    "output_name": "out_zip",
-                    "uuid": "dba272b8-8f30-4507-aa2f-9f2cbfb216f1"
+                    "label": "Cluster report",
+                    "output_name": "cluster_report",
+                    "uuid": "4d9c3cd0-a6ef-4e7b-b8f7-c48a472bfe29"
                 },
                 {
-                    "label": null,
-                    "output_name": "file_tree",
-                    "uuid": "2b2cdcc7-7088-4812-a9b0-ec5382865950"
+                    "label": "Cluster data",
+                    "output_name": "cluster_data",
+                    "uuid": "9c00029a-a8e5-4f59-81d9-71b57ac57252"
                 }
             ]
         }
     },
-    "tags": [],
-    "uuid": "451ca030-0ab1-48bd-b4e9-af9eca405f7a",
-    "version": 4
+    "tags": [
+        "MuonGalaxy"
+    ],
+    "uuid": "889b498f-7f67-4a69-ae38-8516ed6603d3",
+    "version": 13
 }
